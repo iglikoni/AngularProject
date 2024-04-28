@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { RecipeModel } from 'src/app/shared/models/recipe.model';
+import { MainService } from 'src/app/shared/services/main.service';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class ShoppingEditComponent {
 
-}
+  name: string = '';
+  desc: string= '';
+  imgUrl: string = '';
+  recipe!: RecipeModel
+
+constructor(private mainService:MainService){}
+
+
+  
+
+  }
+

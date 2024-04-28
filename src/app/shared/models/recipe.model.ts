@@ -1,7 +1,7 @@
 export interface RecipeModel{
+    id?:string;
     name:string,
     description:string,
     imgUrl:string;
-    quantity:number;
-    detail:string;
+    
 }
